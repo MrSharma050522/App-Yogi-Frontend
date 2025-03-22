@@ -9,6 +9,11 @@ const getUserIdFromURL = () => {
 
 // Get userId from URL
 const userId = getUserIdFromURL();
+/**
+ * Extracting userId from the URL query parameters.
+ * Example: http://localhost:3000/?userId=1
+ * This ensures each user gets a unique identifier when accessing the application.
+ */
 
 const socket = io("http://localhost:5000", {
 	query: { userId },
